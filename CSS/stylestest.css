@@ -1,0 +1,491 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* style for the page */
+/* moible first design */
+body{
+    width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    /* font style and/or color */
+    font-family: "Playfair Display", serif;
+        background-color: #8fbc8F;
+    /*idea for changing the background to be graident*/
+        /*background: linear-gradient(90deg, #8fbc8F,#000000 );*/
+        color:beige;
+}
+/* stlye for header and footer */
+header, footer{
+    background-color: burlywood;
+        border-radius: .50em; 
+        /*box-shadow:.250em .250em #000000;*/
+       text-align-last: center;
+}
+/* stlye for nav */
+nav{
+    width:100%;
+    float: right;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* nested selector to change parameters in a list */
+nav li{
+    list-style: none;
+        /*display: inline-block;*/
+        margin: 1.1em 0.3em;
+        padding: .5em .5em ; 
+        border: .1em 0.1em;
+        font-size: medium; 
+}
+/* removes padding to center text on mobile device */
+nav ul{
+    padding: 0;
+}
+/*Scaling nav list*/
+nav li a{
+    display: inline-block; /* need this line for tranform to work*/
+}
+nav li a:hover{
+    transform:scale(1.2);
+}
+
+h1{
+    text-align: center;
+    border-block-end-style: dashed;
+}
+
+/* Anchor Styling */
+a{
+    text-decoration: none; /* removes link line */
+}
+/* stlye for anchor  */
+a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 20px #38bdf8;
+    transition: .03s;
+}
+/* centering images using a class */
+.centering{
+        text-align: center;
+       color: #556b2f;
+}
+
+.photos{
+    display:flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 1.0em; 
+    object-fit: cover;
+}
+
+/* code to make images fit on mult devices*/
+img{
+    max-width: 100%;
+    border:solid;
+}
+
+
+/* extra footer element styling */
+footer{
+    min-height: 4em;
+    margin: 0.2em;
+    padding: 0.3em;
+    text-align-last: center;
+}
+
+h2{
+    display:inline-flex;
+    justify-content: space-evenly;
+    padding: .5em;
+    margin-top: auto;
+    color:darkred
+}
+
+.puppies{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    text-align: center;
+    align-content: center;
+}
+
+.puppy{
+    width: 156px;
+}
+
+.puppy img{
+    width:100px;
+    height: 100px;
+      /* bounce afffect*/
+    animation: puppy 1s infinite;
+    animation-delay: 5s;
+    animation-iteration-count: 4;
+    -webkit-animation: puppy 1s infinite;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: 4;
+
+}
+/*making the puppy images bounce*/
+@keyframes puppy{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+@-webkit-keyframes puppy{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+.puppy h2{
+    margin-top: 15px;
+}
+/*logo animation*/
+#logo{
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+}
+@keyframes logo{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
+}
+@-webkit-keyframes logo{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
+}
+/* class set up for mobile, display is off so mobile will be used  */
+.desktop{
+    display: none;
+    
+}
+
+/* Styling for Bio page*/
+.bio{
+    list-style: none ;
+    margin: auto;
+    padding: 0;
+}
+/* used to align bullet point with text */
+.bio li{
+    display:flex;
+    align-items: flex-start;
+    gap: .5em;
+    padding:0.5em;
+}
+/* the pseduo code to change bullet point to a diamond instead of a dot*/
+.bio li::before{
+    content:"◆"; /* the design of the bullet point*/
+    display: inline-flex;
+    justify-content: left;
+    margin-top: 0.4em;
+    color:burlywood;
+    padding: .6em .5em;
+}
+/*used to style Bio Picture*/
+.sugar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 1.1em;
+    margin-bottom: 0;
+    
+}
+.sugar img{
+    padding: 0;
+    margin-bottom: 0;
+    width: 60%;
+    height: auto;
+    border-radius: 0;
+    transition: border-radius .5s ease, transform .5s ease;
+}
+#mom:hover{
+    border-radius: 50%;
+    transform: rotate(10deg);
+}
+.cc{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+.cc p{
+    margin-top: 0.6em;
+    padding-bottom: .2em;
+}
+.cc img{
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 200px;
+    margin:.2em .2em;
+    
+}
+
+
+/*table styling for seperate page*/
+table{
+    border: dashed;
+    color: #000000;
+    border-collapse: collapse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 3em;
+    margin:auto;
+    padding: 3em;
+}
+caption{
+    font-style: italic;
+    font-size: large;
+    font-weight: 200;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+tr:nth-child(even){
+    background-color:burlywood;
+}
+th{
+    color:wheat;
+    text-align: center;
+}
+Td{ 
+    border:dotted;
+    color:beige;
+    text-align: center;
+    padding: .5em .5em;
+}
+tr:hover{
+    background-color:#38bdf8; 
+    opacity: .7;
+}
+
+/* styles for the Form Page to make a form and make the page look more appealing */
+/*form styles */
+form{
+    margin: .5em;
+    padding: 0.2em;
+    display: block;
+    max-width: 100%;
+    
+}
+/*style the number for the form to add depth to website page*/
+.number{
+    background-color: burlywood;
+    height: 1.2em;
+    width:1.5em;
+    font-size: .92em;
+    margin-right: 0.23em;
+    text-align: center;
+    line-height: .9em;
+    border-radius: .9375em .9375em .9375em 0;
+    text-shadow: 0 1px 0 #f5f5f1;
+    display:inline-block;
+    /*all above code is to make the circular box around numbers*/
+}
+fieldset{
+    border:none;
+    border-bottom: dashed;
+}
+legend{
+    font-size: 1.5em;
+}
+label{
+    display:flex;
+    flex-direction: row;
+    font-size: large;
+    justify-content:flex-start;
+}
+.suggestion{
+    font-size:large;
+    display: block;
+    max-width: 100%;
+    margin-bottom: .5em;
+}
+
+.tap{
+    display:block;
+}
+input[type="text"] {
+    align-content: center;
+    margin: 1em;
+    width:100%;
+    border-radius: .5em;
+    padding: .5em;
+
+}
+input[type="checkbox"], input[type="radio"]{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+ .row{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-content: center;
+    justify-content: space-evenly;
+    }
+
+
+textarea{
+    max-width: 100%;
+    margin-bottom: .2em;
+    width:100%;
+}
+
+input[type="submit"]:hover{
+    color: #38bdf8;
+    text-decoration-line: underline;
+}
+input[type="reset"], input[type="submit"]{
+    margin-left: .8em;
+    font-size: medium;
+    border-radius: .5em;
+    padding: .3em 1.1em .2em;
+    background-color: burlywood;
+    color:#fefefe;
+}
+input[type="reset"]{
+    color:#fefefe;
+    background-color: darkgray
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="reset"]:hover{
+    color: #38bdf8;
+    text-decoration-line: underline;
+}
+
+/* tablet desgin*/
+@media only screen and (min-width:481px){
+    nav li{
+        display:inline;
+    }
+    .puppies{
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="textarea"]{
+    max-width: 100%;
+    }
+    /* formating for form on ipad*/
+    .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width:fit-content;
+    }
+}
+/* desktop design*/
+@media only screen and (min-width:1024px){
+    body{
+        width:80%;
+    }
+    header, footer{
+        box-shadow:.250em .250em #000000;
+    }
+    header{
+        display:flex;
+    }
+    nav{
+        float:inline-end;
+    }
+    nav li{
+        float: inline-end;
+        list-style: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display:inline;
+    }
+    .puppies{
+       display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: .5em .5em;
+        margin: auto;
+    }
+    .puppy{
+        text-align: center;
+        flex-direction:row;
+    }
+    /* formating for form on desktop*/
+    .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width:fit-content;
+    }
+    /*formatting for Bio page on desktop*/
+    .bio{
+    list-style: none ;
+    margin: auto;
+    padding: .5em;
+    }
+    .bio li{
+    display:flex;
+    align-items: flex-start;
+    gap: .5em;
+    }
+    .bio li::before{
+    content:"◆"; /* the design of the bullet point*/
+    display: flex;
+    justify-content: left;
+    margin-top: 1.0em;
+    color:burlywood;
+    padding: 0.001em 0.2em;
+    }
+    .sugar img{
+        width:150px;
+    }
+    .cc p{
+    margin-top: 0.6em;
+    padding-bottom: .2em;
+    }
+    .cc{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    }
+    .cc img{
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    max-width: 250px;
+    max-height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* style for the page */
+body{
+    width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    /* font style and/or color */
+    font-family: "Playfair Display", serif;
+        background-color: #8fbc8F;
+        color:beige;
+}
+/* stlye for header and footer */
+header, footer{
+    background-color: burlywood;
+        border-radius: .50em; 
+        box-shadow:.250em .250em #000000;
+       
+}
+/* stlye for nav */
+nav{
+    float: right;
+        font-size: 0.9em
+}
+
+/* nested selector to change parameters in a list */
+nav li{
+    list-style: none;
+        display: inline-block;
+        margin: 1.1em 0.3em;
+        padding: .5em .5em ; 
+        border: .1em 0.1em;
+    
+}
+
+h1{
+    text-align: center;
+    border-block-end-style: dashed;
+}
+
+/* Anchor Styling */
+a{
+    text-decoration: none; /* removes link line */
+    
+}
+/* stlye for anchor  */
+a:hover{
+    text-decoration: underline;
+}
+/* centering images using a class */
+.centering{
+        text-align: center;
+       color: #556b2f;
+}
+
+/* code to make images fit on mult devices*/
+img{
+    max-width: 100%;
+    
+}
+
+/* extra footer element styling */
+footer{
+    min-height: 4em;
+    margin: 0.2em;
+    padding: 0.3em;
+    text-align-last: center;
+}
+
+h2{
+        display:inline;
+        
+}

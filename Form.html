@@ -1,0 +1,161 @@
+<!DOCTYPE html> <!-- Required for all HTML documents -->
+<html lang="en"> <!-- Selects Language for document -->
+    <head> <!-- meta data for the web page -->
+        <meta charset="UTF-8">
+        <title>Sugar's Shih Tzus</title> <!-- Name of Website -->
+        <link rel="stylesheet" href="CSS/stylestest.css"> <!-- link to css test file for mobile first design-->
+        <!--<link rel="stylesheet" href="CSS/styles.css">       link to styles for web page from css file--> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- make the width of the viewport scale to the device-->
+        
+        <!-- tags for icons for multiple devices-->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="apple-touch-icon" type="images/png" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="Images/android-chrome-192x192.png">
+        <link rel="shortcut" href="Images/favicon.ico">  <!-- used for favorited pages -->
+        <meta name="author" content="Luke Robinson">
+        <meta name="description" content="Sugar's Shih Tzus Form Page">
+    </head>
+    
+    <body onload="LastModDate()">
+        <script src="Scripts/JavaScript.js"></script>
+        <header> <!-- Created By: Luke Robinson -->
+                <!-- Image source is going to be used for Logo     Delete ../ at start when going to index file-->
+                <img src="Images/logo.png" alt="Picture of a Dog" height="100" width="100" id="logo">
+                <!-- Navigation is used to link other pages to homepage and vise versa -->
+            <nav> 
+                <ul> 
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="Form.html"> Find The One</a></li>
+                    <li><a href="Parents_Dog.html"> Parents </a></li>
+                    <li><a href="Bio.html"> Sugar's Bio </a></li>
+                    <li><a href="index.html"> About  </a></li>
+                </ul>
+            </nav>
+        </header>
+        
+            <main> 
+                <div class="centering">
+                <h1>Welcome To <br> Sugar&#39;s Find The One Page!</h1>
+                <p> On this page you can find how to directly contact us to find the right puppy for you, express your thoughts on how you found us, or if you have any questions about the service we are/have provided. </p>
+                <p> Please feel free to use the form below to ask any questions you have!</p>
+                </div>
+                
+                 <table>
+                    <caption> Available Puppies </caption>
+                    <thead>
+                        <tr>
+                            <th> Gender </th>
+                            <th> Age </th>
+                            <th> Color </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Male</td>
+                            <td> 2 Weeks</td>
+                            <td> White</td>
+                         
+                        </tr>
+                        <tr>
+                            <td> Male</td>
+                            <td> 4 Weeks</td>
+                            <td> Mixed</td>
+                        </tr>
+                        <tr>
+                            <td> Female</td>
+                            <td> 2 Weeks</td>
+                            <td> Black</td>
+                            
+                        </tr>
+                        <tr>
+                            <td> Female</td>
+                            <td> 4 Weeks</td>
+                            <td> Mixed</td>
+                        
+                        </tr>
+                </table>
+                
+                <form>    <!-- Form for people to contact the seller -->
+                    <fieldset> <!-- used to group information together for form    -->
+                        <legend><span class="number">1</span> Contact Information</legend>
+                        <label for="name" class="tap">Name:</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email_addr" class="tap">Email:</label>
+                        <input type="text" name="email_addr" id="email_addr">
+                        <label for="State" class="tap">State:</label>
+                        <input type="text" name="State" id="State">
+                        <label for="tele" class="tap">Phone Number:</label>
+                        <input type="text" name="tele" id="tele">
+                        </fieldset>
+                    <!--Radio button for choice of contact preference-->
+                    <fieldset>
+                        <legend> <span class="number">2</span>  Contact Preference</legend>
+                            <div class="row">
+                        <input type="radio" name="contact_info" value="email" id="contact_info">
+                        <label for="contact_info"> Email </label>
+                        <input type="radio" name="contact_info" value="telephone" id="contact_tele">
+                        <label for="contact_tele"> Phone Number</label>
+                            </div>
+                    </fieldset>
+                    <!-- Field to be filled out for questions that the buyer might want to ask-->
+                    <fieldset>
+                        <legend> <span class="number">3</span>  Questions </legend>
+                            <div class="row">
+                        <input type="checkbox" name="questions" value="Gender" id="gender">
+                        <label for="gender"> Gender</label>
+                        <input type="checkbox" name="questions" value="Age" id="age">
+                        <label for="age"> Age</label>
+                        <input type="checkbox" name="questions" value="Dog Colors" id="colors">
+                        <label for="colors"> Dog Colors</label>
+                        <input type="checkbox" name="questions" value="Dog Records" id="records">
+                        <label for="records"> Dog Records</label>
+                        <input type="checkbox" name="questions" value="Payment" id="Payment">
+                        <label for="Payment"> Payment </label>
+                        <input type="checkbox" name="questions" value="Other" id="other">
+                        <label for="other"> Other</label>
+                            </div>
+                    </fieldset>
+                    <!-- Information for how the individual found the website -->
+                    <fieldset>
+                    <legend> <span class="number">4</span> Additional Information</legend>
+                        <label for="referral"> How Did You Hear About Us?</label>
+                        <select id="referral">
+                            <option> Friends</option>
+                            <option> Family</option>
+                            <option> Coworker</option>
+                            <option> Google</option>
+                            <option> Social Media</option>
+                            <option> Other</option>
+                        </select>
+                    </fieldset>
+                    <!-- suggestion box-->
+                    <fieldset>
+                    <label class="suggestion" for="suggestion" > Suggestions for Sugar?</label>
+                    <textarea name="suggestion" id="suggestion" rows="7" cols="100"> </textarea>
+                    </fieldset>
+                    <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset Form">
+                    </div>
+                </form>
+            </main>
+        
+    
+        <!-- Footer has information for the assignment and must come before body element but footer is where copyright infomation goes -->
+        <footer>
+            <div class="desktop">
+                <p>&copy; ITFN 1401 | Clayton State University | <a href="mailto:lrobinson68@student.clayton.edu.?subject=Purchasing%20A%20Dog">lrobinson68@student.clayton.edu </a> | Due on Nov 15, 2026 </p>
+            </div>
+            <div class="mobile">
+                <p> &copy; </p>
+                <p> ITFN 1401</p>
+                <p> Clayton State University </p>
+                <p><a href="mailto:lrobinson68@student.clayton.edu.?subject=Purchasing%20A%20Dog">lrobinson68@student.clayton.edu </a> </p>
+                <p> Due on Nov 15, 2026 </p>
+            </div>
+            <div id="DisplayLastModDate"> </div>
+         </footer>
+    </body>
+    
+</html>
